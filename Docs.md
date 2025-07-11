@@ -1,29 +1,33 @@
-Markdown
+his document describes the structure and purpose of each part of the `index.html` file.
 
-# Documentation for Passing Grade Website
+---
 
-## Purpose
+## <!DOCTYPE html>
+Declares the document type and version of HTML (HTML5).
 
-This website serves as a humorous and minimalist statement for anyone feeling the academic grind. Its sole purpose is to display the text "I just want a passing grade."
+## <html lang="en">
+Root element of the HTML page. The `lang="en"` specifies that the language is English.
 
-## Structure
+## <head>
+Contains metadata and styling for the page:
+- `<meta charset="UTF-8" />`: Sets character encoding.
+- `<meta name="viewport" ...>`: Ensures responsive design on mobile devices.
+- `<title>`: Sets the tab title in the browser.
+- `<style>`: Contains all the CSS for the minimalist layout.
 
-The project is intentionally kept simple, consisting of:
+## <body>
+The visible part of the page:
+- Uses Flexbox to center content vertically and horizontally.
+- Displays one `<h1>` element with the message: **"I just want a passing grade"**.
 
--   `index.html`: The core of the website, containing both the HTML structure and the CSS styling for a single page.
--   `README.md`: Provides a brief overview and instructions for the project.
--   `.gitignore`: Helps keep the repository clean by excluding unnecessary files.
--   `Docs/documentation.md`: This file, detailing the project's specifics.
+---
 
-## Styling
+## Styling Notes
+- Neutral colors and minimal shadows ensure a clean design.
+- The message is wrapped in a styled `h1` with padding, border, background, and rounded corners.
 
-The styling is embedded directly within the `<style>` tags in `index.html` to maintain a single-file solution. It uses basic CSS to center the text on the page, provide a simple background, and apply a clean font.
+---
 
-### Key CSS Properties:
+## No JavaScript
+This is a static HTML page with no scripts, frameworks, or libraries.
 
--   **`display: flex; justify-content: center; align-items: center;`**: Centers the content both horizontally and vertically on the page.
--   **`min-height: 100vh;`**: Ensures the body takes up at least the full height of the viewport.
--   **`background-color`**: A light grey background (`#f0f0f0`).
--   **`.container`**: A white box with a border and subtle shadow to make the text stand out.
-
-## Future Enhancements (Optional)
